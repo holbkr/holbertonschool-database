@@ -1,14 +1,6 @@
--- -- taskim0
--- DROP TABLE IF EXISTS users;
--- CREATE TABLE users (
---     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
---     email VARCHAR(255) NOT NULL UNIQUE,
---     name VARCHAR(255)
--- );
--- Create table users with id, email and name
+-- Create a users table if not exists
 CREATE TABLE IF NOT EXISTS users (
-    id INT NOT NULL AUTO_INCREMENT,
-    email VARCHAR(255) NOT NULL UNIQUE,
-    name VARCHAR(255),
-    PRIMARY KEY (id)
+       id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+       email VARCHAR(255) NOT NULL UNIQUE,
+       name VARCHAR(255)
 );
